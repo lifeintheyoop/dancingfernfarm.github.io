@@ -1,0 +1,88 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #f0f8f4 url('images/leaf-texture.png') repeat;
+  color: #2c3b2c;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #cde7c4;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: 'Uncial Antiqua', cursive;
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  color: #385938;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+nav a {
+  color: #3b5e3b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.status {
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+.open-box {
+  display: inline-block;
+  border: 3px dashed #6b9f6b;
+  background-color: #eafbe4;
+  padding: 1rem 2rem;
+  color: #217821;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.main-photo img {
+  display: block;
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem auto;
+  border: 6px solid #cde7c4;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  background-color: #cde7c4;
+  text-align: center;
+  padding: 1rem;
+  font-weight: 600;
+}
+
+footer a {
+  margin: 0 1rem;
+  color: #2d3c2d;
+  text-decoration: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .open-box {
+    width: 80%;
+    font-size: 1.2rem;
+  }
+
+  .main-photo img {
+    width: 95%;
+  }
+}
