@@ -110,3 +110,55 @@ footer a {
   border: 1px solid #ddd;
   background-color: #fafafa;
 }
+
+/* Base menu */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;           /* horizontal nav */
+  gap: 1rem;
+}
+
+.menu > li {
+  position: relative;      /* needed for submenu to position */
+}
+
+/* Dropdown trigger link */
+.menu .dropdown > a {
+  cursor: pointer;
+}
+
+/* Hide the submenu by default */
+.menu .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;               /* dropdown sits below parent */
+  left: 0;
+  list-style: none;
+  background: #fff;         /* change as desired */
+  padding: 0.5rem 0;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Show submenu on hover */
+.menu .dropdown:hover .submenu {
+  display: block;
+}
+
+/* Style submenu items */
+.menu .submenu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hover style for submenu links */
+.menu .submenu li a:hover {
+  background: #f0f0f0;
+}
+
+
